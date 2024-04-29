@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Telegram Bookmarker",
+    "version": "0.1",
+    "description": "A simple extension to save bookmarks to Telegram.",
+    "icons": {
+        "48": "icons/icon-dark-48.png"
+    },
+    "author": "reo <ramazanemreosmanoglu@gmail.com>",
+
+    "browser_action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Telegram Bookmarker",
+        "theme_icons": [
+            {
+                "dark": "icons/icon-dark-48.png",
+                "light": "icons/icon-light-48.png",
+                "size": 48
+            }
+        ]
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "web_accessible_resources": [
+        "setup/setup.html",
+        "setup/setup.js"
+    ]
+}
